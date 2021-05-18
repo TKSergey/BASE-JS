@@ -12,7 +12,7 @@ console.log(numToObj(n));
 
 function numToObj(n) {
     if (n < 0 || n > 999 || isNaN(n)) {
-        alert("Неверное число. Введите число от 0 до 999.");
+        alert("Число " + n + " вне диапазона 0 - 999");
     } else {
         let str = n.toString();
         let obj = {};
@@ -20,10 +20,15 @@ function numToObj(n) {
         switch (l) {
             case 3:
                 obj["Сотни"] = str[l - 3];
+                obj["Десятки"] = str[l - 2];
+                obj["Единицы"] = str[l - 1];
+                break;
             case 2:
                 obj["Десятки"] = str[l - 2];
-            case 1:
                 obj["Единицы"] = str[l - 1];
+                break;
+            default:
+                obj["Единицы"] = n;
         }
         return obj;
     }
