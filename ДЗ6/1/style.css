@@ -1,0 +1,20 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+.small {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+
+.big {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+
+.small img {
+    width: 150px;
+    height: 150px;
+}
