@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.prev,
+.next {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: aqua
+}
+
+
+.photos img {
+    margin-top: 20px;
+    width: 700px;
+    height: 500px;
+    display: none;
+}
+
+.photos img:first-child {
+    display: block;
+}
+
+.buttons {
+    margin-top: 30px;
+}
